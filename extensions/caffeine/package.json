@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "caffeine",
+  "title": "Caffeine",
+  "description": "Keep your Mac awake",
+  "icon": "icon.png",
+  "author": "john",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "caffeinate",
+      "title": "Caffeinate",
+      "description": "Keep this Mac awake",
+      "mode": "no-view"
+    },
+    {
+      "name": "decaffeinate",
+      "title": "Decaffeinate",
+      "description": "Let this Mac sleep again",
+      "mode": "no-view"
+    },
+    {
+      "name": "status",
+      "title": "Caffeine Status",
+      "description": "Show whether this Mac is awake",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "ray build -e dist -o dist"
+  }
+}
